@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-hot-toast";
+import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 const Register = () => {
   const [name, setName] = useState("");
@@ -35,11 +35,11 @@ const Register = () => {
       console.log(error);
       toast.error("Something went wrong");
     }
-  }
+  };
 
   return (
-    <Layout title="Register - Ecommerce App">
-      <div className="form-container" style={{ minHeight: "90vh" }}>
+    <Layout title="Register - Ecommer App">
+      <div className="form-container ">
         <form onSubmit={handleSubmit}>
           <h4 className="title">REGISTER FORM</h4>
           <div className="mb-3">
